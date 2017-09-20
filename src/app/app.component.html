@@ -1,0 +1,8 @@
+<app-search (userSearched)="getDataFromService($event)"></app-search>
+<ul>
+  <li *ngFor="let character of characters">
+    {{character.name}}
+    <img src="{{character.thumbnail.path}}/standard_fantastic.{{character.thumbnail.extension}}">
+  </li>
+</ul>
+
